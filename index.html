@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Portfólio | Wendel Faria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Menu/Navbar -->
+    <header>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Olá, eu sou <span>Wendel Faria</span></h1>
+            <p>Desenvolvedor Full Stack | Analista de Sistemas</p>
+            <a href="#projects" class="btn">Ver Projetos</a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="about" class="about">
+        <h2>Sobre Mim</h2>
+        <div class="about-content">
+            <img src="assets/Wendel.png" alt="Minha Foto" class="profile-img">
+            <div class="about-text">
+                <p>
+                    Sou formado em Análise e Desenvolvimento de Sistemas, com experiência em desenvolvimento web (HTML, CSS, JS, React) e back-end (C#, Node.js). 
+                    Apaixonado por resolver problemas e criar soluções eficientes.
+                </p>
+                <div class="skills">
+                    <h3>Habilidades:</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-react"></i> React</li>
+                        <li><i class="fas fa-database"></i> SQL</li>
+                        <li><i class="fab fa-docker"></i> Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projects" class="projects">
+        <h2>Meus Projetos</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>To-Do List App</h3>
+                <p>Aplicativo de tarefas feito com React e localStorage.</p>
+                <a href="#" class="btn">Ver Detalhes</a>
+            </div>
+            <div class="project-card">
+                <h3>Sistema de Cadastro</h3>
+                <p>Formulário em C# com conexão a banco de dados SQL.</p>
+                <a href="#" class="btn">Ver Detalhes</a>
+            </div>
+            <div class="project-card">
+                <h3>Portfólio Pessoal</h3>
+                <p>Site responsivo usando HTML, CSS e JavaScript.</p>
+                <a href="#" class="btn">Ver Detalhes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <div class="contact-content">
+            <form>
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu E-mail" required>
+                <textarea placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Wendel Faria. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.body.classList.add('animations-ready');
+            }, 150);
+        });
+    </script>
+</body>
+</html>
